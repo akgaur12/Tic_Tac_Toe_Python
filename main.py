@@ -175,4 +175,44 @@ root.iconphoto(False, icon)
 p1_name = StringVar()
 p2_name = StringVar()
 
+
+def home():
+    global en1, en2, p1_wins, p2_wins
+    f1 = Frame(root, bg='#90caf9')
+    f1.place(x=0, y=0, height=564, width=516)
+
+    lbl_heading = Label(f1, text='Tic Tac Toe', font=('Times New Roman', 30, 'bold'), bg='#90caf9', fg='black')
+    lbl_heading.pack(pady=(15,8))
+
+    img1 = PhotoImage(file='img2.png')
+    lbl_img1 = Label(f1, image=img1, bd=0)
+    lbl_img1.image_names = img1
+    lbl_img1.pack()
+
+    lbl2 = Label(f1, text='Player 1 Name :', font=('Times New Roman', 15, ), bg='#90caf9',)
+    lbl2.place(x=50, y=310)
+    en1 = Entry(f1, font=('', 15), textvariable=p1_name)
+    en1.place(x=200, y=310)
+   
+    lbl3 = Label(f1, text='Player 2 Name :', font=('Times New Roman', 15, ), bg='#90caf9',)
+    lbl3.place(x=50, y=345)
+    en2 = Entry(f1, font=('', 15), textvariable=p2_name)
+    en2.place(x=200, y=345)
+
+    btn_start = Button(f1, text='Start Game', font=('Comic Sans MS', 15, 'bold'), bg='brown', fg='white', activebackground='light blue', command=game)
+    btn_start.place(x=200,y=420, height=50)
+
+    p1_wins = 0
+    p2_wins = 0
+
+    lbl = Label(root, text="Akash Gaur", font=("Harlow Solid Italic", 10), bg='#90caf9').place(x=415, y=530)
+
+
+   
+home()
+p1_name.set("Brown")
+p2_name.set("Blue")
+
+
+root.mainloop()
   
