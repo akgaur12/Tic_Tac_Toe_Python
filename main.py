@@ -95,4 +95,48 @@ def result():
         messagebox.showinfo('Result', 'Match Draw')
         clear()
 
+
+def show(b):
+    global click
+    if click%2 == 0:
+        if b['text'] == '':
+            b.config(text='0', fg='brown')
+            click += 1
+    else:
+        if b['text'] == '':
+            b.config(text='X', fg='blue')
+            click += 1
+    result()
+
+
+def clear():
+    global b1, b2, b3, b4, b5, b6, b7, b8, click
+    b1.config(text='')
+    b2.config(text='')
+    b3.config(text='')
+    b4.config(text='')
+    b5.config(text='')
+    b6.config(text='')
+    b7.config(text='')
+    b8.config(text='')
+    b9.config(text='')
+    click = 0
+
+
+def button(wn, x, y):
+    btn = Button(
+        wn, text='', 
+        font=('Comic sans ms', 34,'bold'), 
+        height=2, 
+        width=6, 
+        bg='light green',
+        activebackground='light green',
+        relief='sunken', 
+        command=lambda:show(btn)
+    )
+    btn.place(x=x, y=y)
+    return btn
+
+
+
   
