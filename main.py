@@ -138,5 +138,41 @@ def button(wn, x, y):
     return btn
 
 
+def game():
+    global wins, lb1, lb2
+    f2 = Frame(root, bg='#7688ee')
+    f2.place(x=0, y=0, height=564, width=516)
+
+    img = PhotoImage(file="back.png")
+    btn_back = Button(f2, image=img, command=home, bg='#7688ee', bd=0, )
+    btn_back.image_names = img
+    btn_back.place(x=2, y=8)
+
+    lb1 = Label(f2, text=(en1.get()+" "+str(p1_wins)), font=('Bahnschrift', 14), bg='#7688ee', fg='white')
+    lb1.place(x=110, y=5)
+    lb2 = Label(f2, text=(en2.get()+" "+str(p2_wins)), font=('Bahnschrift', 14), bg='#7688ee', fg='white')
+    lb2.place(x=320, y=5)
+
+    global b1, b2, b3, b4, b5, b6, b7, b8, b9
+    b1 = button(f2,0,45)
+    b2 = button(f2,172,45)
+    b3 = button(f2,344,45)
+    b4 = button(f2,0,218)
+    b5 = button(f2,172,218)
+    b6 = button(f2,344,218)
+    b7 = button(f2,0,391)
+    b8 = button(f2,172,391)
+    b9 = button(f2,344,391)
+
+
+root = Tk()
+root.title('Tic-Tac-Toe')
+root.geometry('516x564+500+80')
+root.resizable(0,0)
+icon = PhotoImage(file='img1.png')
+root.iconphoto(False, icon)
+
+p1_name = StringVar()
+p2_name = StringVar()
 
   
