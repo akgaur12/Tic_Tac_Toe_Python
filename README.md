@@ -1,5 +1,3 @@
-Certainly! Here's a brief description that you can use for your GitHub repository's `README.md` file for the "Tic-Tac-Toe" project:
-
 # Tic-Tac-Toe Game using Python
 
 Welcome to the Tic-Tac-Toe Game repository! Play the classic game of Tic-Tac-Toe with an interactive graphical user interface (GUI) implemented in Python. This project showcases a simple yet engaging implementation of the timeless Tic-Tac-Toe game, where players can take turns and compete against each other.
