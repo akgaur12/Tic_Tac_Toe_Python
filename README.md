@@ -4,10 +4,10 @@ Welcome to the Tic-Tac-Toe Game repository! Play the classic game of Tic-Tac-Toe
 
 ## Features
 
-- Interactive GUI: Enjoy a user-friendly graphical interface that allows players to easily make their moves.
-- Multiplayer mode: Enjoy the game with friends or family, competing against each other to achieve three in a row.
-- Winning Logic: The game determines the winner based on traditional Tic-Tac-Toe rules.
-- Simple and engaging: Play the age-old game of Tic-Tac-Toe with an intuitive user interface and smooth interaction
+- **Interactive GUI:** Enjoy a user-friendly graphical interface that allows players to easily make their moves.
+- **Multiplayer mode:** Enjoy the game with friends or family, competing against each other to achieve three in a row.
+- **Winning Logic:** The game determines the winner based on traditional Tic-Tac-Toe rules.
+- **Simple and engaging:** Play the age-old game of Tic-Tac-Toe with an intuitive user interface and smooth interaction
 
 ## Demo Video
 
